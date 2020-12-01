@@ -18,9 +18,10 @@
 .tab-solid-success .nav-link,
 .btn-success.submit-btn,
 .btn-info.submit-btn,
-.btn-default.submit-btn {
+.btn-default.submit-btn,
+.btn-primary.submit-btn {
   padding: 14px 20px !important;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {

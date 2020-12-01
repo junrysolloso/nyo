@@ -69,7 +69,7 @@
           </div>
         </div>
         <div class="col-12 pt-2">
-          <input type="submit" name="room_submit" value="Add Room" class="btn btn-info submit-btn float-right">
+          <input type="submit" name="room_submit" value="Add Room" class="btn btn-success submit-btn float-right">
         </div>
       </div>
     </form>
@@ -213,7 +213,7 @@
           </div>
         </div>
         <div class="col-12 pt-2">
-          <input type="submit" name="user_submit" value="Add User" class="btn btn-info submit-btn float-right">
+          <input type="submit" name="user_submit" value="Add User" class="btn btn-success submit-btn float-right">
         </div>
       </div>
     </form>
