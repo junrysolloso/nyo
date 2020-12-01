@@ -1,0 +1,63 @@
+<?php defined( 'BASEPATH' ) OR exit( 'No direct script access allowed' ); ?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><?php echo $title; ?></title>
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>nyo-uploads/dinagat-coders-icon.png" />
+
+    <!-- Required CSS -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>nyo-assets/vendors/mdi/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>nyo-assets/vendors/css/vendor.bundle.base.css" />
+
+    <!-- Plugins -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>nyo-assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>nyo-assets/vendors/select2/css/select2.min.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>nyo-assets/vendors/jquery-toast-plugin/jquery.toast.min.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>nyo-assets/css/style-main.min.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>nyo-assets/css/style.min.css" />
+    
+    <!-- Additional CSS -->
+    <?php echo $_styles; ?>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="<?php echo base_url(); ?>nyo-assets/css/admin.css" />
+  </head>
+  <body class="<?php echo $body_class; ?>">
+    <input type="hidden" id="base_url" value="<?php echo base_url(); ?>" />
+    <?php echo $content; ?>
+
+    <!-- Required JS -->
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/vendors/js/vendor.bundle.base.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/vendors/datatables.net/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/vendors/inputmask/jquery.inputmask.bundle.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/vendors/select2/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/vendors/sweetalert/sweetalert.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/vendors/jquery-toast-plugin/jquery.toast.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helper_dateformat.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helper_nav.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helper_toast.js"></script>
+
+    <!-- 
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helper_notify.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helper_form_validation.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/vendors/daterangepicker/moment.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/vendors/daterangepicker/daterangepicker.min.js"></script> 
+    -->
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helper_datepicker.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helper_table.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helper_action.js"></script>
+
+    <!-- Additional JS -->
+    <?php echo $_scripts; ?>
+  </body>
+</html> 
