@@ -95,7 +95,7 @@
                     </div>
                   </div>
                   <div class="col-12 pt-2">
-                    <input type="submit" name="edit_user_submit" value="Update Profile" class="btn btn-info submit-btn float-left">
+                    <input type="submit" name="edit_user_submit" value="Update Profile" class="btn btn-success submit-btn float-left">
                   </div>
                 </div>
               </form>
@@ -133,7 +133,7 @@
                   </div>
                 </div>
                 <div class="col-12 pt-2">
-                  <input type="submit" name="add_booking_submit" value="Add Booking" class="btn btn-info submit-btn float-left">
+                  <input type="submit" name="add_booking_submit" value="Add Booking" class="btn btn-success submit-btn float-left">
                 </div>
               </div>
             </form>

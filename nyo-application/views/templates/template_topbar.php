@@ -7,7 +7,7 @@
       <div class="navbar-menu-wrapper d-flex align-items-center w-100">
         <ul class="nav">
           <div class="nav-item ml-1">
-            <div class="form-group" style="width: 72vw; margin-bottom: 0px;">
+            <div class="form-group" style="width: 70vw; margin-bottom: 0px;">
               <div class="input-group">
                 <input type="text" name="data_search" onmouseover="this.focus();" id="top-search" class="form-control" placeholder="Search Member">
                 <div class="input-group-append">

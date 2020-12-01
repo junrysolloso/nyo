@@ -2,7 +2,7 @@
 .auth.register-bg-2,
 .auth.theme-two .banner-section .slide-content.bg-2,
 .error-page {
-  background-image: linear-gradient(to left,#3e52bb,#1a2086) !important;
+  background-image: linear-gradient(to left,#19D895,#2FBA54) !important;
 }
 
 .tab-solid-success .nav-link.active,
@@ -10,21 +10,22 @@
 .pagination .page-item.active .page-link,
 .pagination .page-item:hover .page-link,
 .btn-info.submit-btn {
-  background: #1a2086;
-  background-image: linear-gradient(to left,#3e52bb,#1a2086);
-  border-color: #1a2086;
+  background: #2FBA54;
+  background-image: linear-gradient(to left,#19D895,#2FBA54);
+  border-color: #2FBA54;
 }
 
 .tab-solid-success .nav-link,
 .btn-success.submit-btn,
 .btn-info.submit-btn,
-.btn-default.submit-btn {
+.btn-default.submit-btn,
+.btn-primary.submit-btn {
   padding: 14px 20px !important;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background: #1a2086;
+  background: #2FBA54;
 }
 
 .auth.multi-step-login .step-form {
@@ -32,7 +33,7 @@
 }
 
 .auth.multi-step-login .step-form .step-progress li.active:before {
-  background-image: linear-gradient(to left,#3e52bb,#1a2086);
+  background-image: linear-gradient(to left,#19D895,#2FBA54);
   color: #fff;
 }
 
@@ -109,7 +110,7 @@ div.dataTables_wrapper div.dataTables_filter {
   margin-left: -30px;
   position: relative;
   z-index: 9999;
-  color:#1a2086;
+  color:#2FBA54;
   cursor: pointer;
 }
 
@@ -173,11 +174,11 @@ div.dataTables_wrapper div.dataTables_filter {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(to left,#3e52bb,#1a2086);
+  background-image: linear-gradient(to left,#19D895,#2FBA54);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-image: linear-gradient(to right,#3e52bb,#1a2086);
+  background-image: linear-gradient(to right,#19D895,#2FBA54);
 }

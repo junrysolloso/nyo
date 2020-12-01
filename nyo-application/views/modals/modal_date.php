@@ -29,7 +29,7 @@
                   </div>
                 </div>
                 <div class="col-12 pt-2">
-                  <input type="submit" name="report_month_submit" value="View" class="btn btn-info submit-btn float-left">
+                  <input type="submit" name="report_month_submit" value="View" class="btn btn-success submit-btn float-left">
                 </div>
               </div>
             </form>
@@ -73,7 +73,7 @@
                   </div>
                 </div>
                 <div class="col-12 pt-2">
-                  <input type="submit" name="report_year_submit" value="View" class="btn btn-info submit-btn float-left">
+                  <input type="submit" name="report_year_submit" value="View" class="btn btn-success submit-btn float-left">
                 </div>
               </div>
             </form>
