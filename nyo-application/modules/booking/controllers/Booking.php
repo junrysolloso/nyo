@@ -8,10 +8,10 @@ class Booking extends MY_Controller
 
     // Load models
     $this->load->model( 'Model_Booking' );
-    $this->load->model( 'settings/Model_Payment' );
-    $this->load->model( 'settings/Model_Room' );
-    $this->load->model( 'settings/Model_User_Meta' );
-    $this->load->model( 'settings/Model_User_Login' );
+    $this->load->model( 'setting/Model_Payment' );
+    $this->load->model( 'setting/Model_Room' );
+    $this->load->model( 'setting/Model_User_Meta' );
+    $this->load->model( 'setting/Model_User_Login' );
   }
 
 	/**

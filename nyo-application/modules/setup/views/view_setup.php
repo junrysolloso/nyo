@@ -1,6 +1,6 @@
 <div class="container-scroller">
   <div class="container-fluid page-body-wrapper full-page-wrapper">
-    <div class="content-wrapper d-flex align-items-center text-center error-page" style="background-image: linear-gradient(to bottom,#d41459,#911a6c);">
+    <div class="content-wrapper d-flex align-items-center text-center error-page">
       <div class="row flex-grow">
         <div class="col-lg-7 mx-auto text-white">
           <div class="row align-items-center d-flex flex-row">

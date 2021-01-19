@@ -13,48 +13,64 @@ class Migration_Install_Setup extends CI_Migration
 		// Table fields
 		$tables = array(
 
-			'settings' => array(
-				"`set_id` INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT",
-				"`set_price` DECIMAL(5,2) DEFAULT 0",
+			'chapter' => array( 
+				"`chapter_id` INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT",
+				"`chapter_code` VARCHAR(30) NOT NULL",
+				"`chapter_name` VARCHAR(30) NOT NULL",
+				"`chapter_address` VARCHAR(255) NOT NULL",
+				"`chapter_photo` VARCHAR(32) NOT NULL",
 			),
-
-			'rooms' => array(
-				"`room_id` INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT",
-				"`room_name` VARCHAR(30) NOT NULL",
-				"`room_equiv` TINYINT(2) NOT NULL",
-				"`room_rate` DECIMAL(9,2) NOT NULL DEFAULT 0",
-				"`room_photo` VARCHAR(200) NOT NULL",
-				"`room_desc` TEXT NOT NULL",
-				"`room_status` CHAR(10) NOT NULL",
-				"`room_available` TINYINT(2) NOT NULL",
+			
+			'pbma_membership' => array(
+				"`pbma_membership_id` INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT",
+				"`pbma_date_registered` DATE NOT NULL",
+				"`pbma_id_number` SMALLINT(8) NOT NULL",
 			),
-
-			'bookings' => array(
-				"`book_id` INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT",
-				"`book_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP",
-				"`book_arrival` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP",
-				"`book_status` VARCHAR(15) NOT NULL",
-				"`book_cancel` DATETIME NOT NULL",
-				"`room_id` INT(11) NOT NULL",
-				"`user_id` INT(11) NOT NULL",
+			
+			'nyo_membership' => array(
+				"`nyo_membership_id` INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT",
+				"`nyo_date_registered` DATE NOT NULL",
+				"`nyo_or_number` VARCHAR(15) NOT NULL",
+				"`nyo_issued_by` VARCHAR(15) NOT NULL",
+				"`nyo_special_skills` VARCHAR(60) NOT NULL",
 			),
-
-			'payments' => array(
-				"`pay_id` INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT",
-				"`pay_amount` DECIMAL(9,2) NOT NULL DEFAULT 0",
-				"`pay_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP",
-				"`pay_reciever` INT(11) NOT NULL",
-				"`user_id` INT(11) NOT NULL",
-				"`book_id` INT(11) NOT NULL",
+			
+			'member_meta' => array(
+				"`member_id` INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT",
+				"`member_first_name` VARCHAR(30) NOT NULL",
+				"`member_last_name` VARCHAR(30) NOT NULL",
+				"`member_middle_name` VARCHAR(15) NOT NULL",
+				"`member_place_of_birth` VARCHAR(255) NOT NULL",
+				"`member_present_address` VARCHAR(255) NOT NULL",
+				"`member_gender` VARCHAR(8) NOT NULL",
+				"`member_blood_type` VARCHAR(15) NOT NULL",
+				"`member_distinctive_marks` VARCHAR(30) NOT NULL",
+				"`member_phone_number` VARCHAR(15) NOT NULL",
+				"`member_educ_attainment` VARCHAR(60) NOT NULL",
+				"`member_occupation` VARCHAR(20) NOT NULL",
+				"`member_name_extension` CHAR(2) NOT NULL",
+				"`member_prof_title` VARCHAR(30) NOT NULL",
+				"`member_date_of_birth` DATE NOT NULL",
+				"`member_civil_status` CHAR(10) NOT NULL",
+				"`member_height` VARCHAR(8) NOT NULL",
+				"`member_weight` VARCHAR(8) NOT NULL",
+				"`member_citizenship` CHAR(15) NOT NULL",
+				"`member_color_of_eyes` CHAR(8) NOT NULL",
+				"`member_email_address` VARCHAR(15) NOT NULL",
+				"`member_course` VARCHAR(30) NOT NULL",
+				"`member_degree` VARCHAR(60) NOT NULL",
+				"`member_religion` CHAR(20) NOT NULL",
+				"`member_left_thumb` VARCHAR(30) NOT NULL",
+				"`member_right_thumb` VARCHAR(30) NOT NULL",
+				"`member_signature` VARCHAR(30) NOT NULL",
+				"`member_photo` VARCHAR(30) NOT NULL",
+				"`member_position` CHAR(15) NOT NULL",
+				"`member_status` CHAR(15) NOT NULL",
+				"`chapter_id` INT(11) NOT NULL",
+				"`pbma_membership_id` INT(11) NOT NULL",
+				"`nyo_membership_id` INT(11) NOT NULL",
 			),
-
-			'logs' => array(
-				"`log_id` INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT",
-				"`log_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP",
-				"`log_task` VARCHAR(60) NOT NULL",
-				"`user_id` INT(11) NOT NULL",
-			),
-
+			
 			'user_meta' => array(
 				"`user_id` INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT",
 				"`user_fname` VARCHAR(60) NOT NULL",
@@ -63,8 +79,9 @@ class Migration_Install_Setup extends CI_Migration
 				"`user_add` VARCHAR(255) NOT NULL",
 				"`user_photo` VARCHAR(100) NOT NULL",
 				"`user_status` CHAR(15) NOT NULL",
+				"`member_id` INT(11) NOT NULL",
 			),
-
+			
 			'user_login' => array(
 				"`login_id` INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT",
 				"`login_name` VARCHAR(20) NOT NULL",
@@ -72,14 +89,21 @@ class Migration_Install_Setup extends CI_Migration
 				"`login_level` VARCHAR(25) NOT NULL",
 				"`user_id` INT(11) NOT NULL",
 			),
-
+			
+			'logs' => array(
+				"`log_id` INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT",
+				"`log_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP",
+				"`log_task` VARCHAR(60) NOT NULL",
+				"`user_id` INT(11) NOT NULL",
+			),
+			
 			'auth_attempts' => array(
 				"`auth_id` INT(2) NOT NULL PRIMARY KEY AUTO_INCREMENT",
 				"`auth_attempts` TINYINT(2) NOT NULL",
 				"`auth_date` DATETIME NOT NULL",
 				"`auth_user` VARCHAR(60) NOT NULL",
 			),
-
+			
 			'sessions' => array(
 				"`id` VARCHAR(128) NOT NULL",
 				"`ip_address` VARCHAR(45) NOT NULL",

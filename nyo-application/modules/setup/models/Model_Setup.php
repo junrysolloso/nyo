@@ -19,8 +19,8 @@ class Model_Setup extends MY_Model
           return true; 
         }
         break;
-      case 'bookings':
-        if( $this->db->truncate( 'tbl_bookings' ) ) { 
+      case 'chapter':
+        if( $this->db->truncate( 'tbl_chapter' ) ) { 
           return true; 
         }
         break;
@@ -29,18 +29,18 @@ class Model_Setup extends MY_Model
           return true; 
         }
         break;
-      case 'payments':
-        if( $this->db->truncate( 'tbl_payments' ) ) { 
+      case 'pbma membership':
+        if( $this->db->truncate( 'tbl_pbma_membership' ) ) { 
           return true; 
         }
         break;
-      case 'rooms':
-        if( $this->db->truncate( 'tbl_rooms' ) ) { 
+      case 'nyo membership':
+        if( $this->db->truncate( 'tbl_nyo_membership' ) ) { 
           return true; 
         }
         break;
-      case 'settings':
-        if( $this->db->truncate( 'tbl_settings' ) ) { 
+      case 'members':
+        if( $this->db->truncate( 'tbl_member_meta' ) ) { 
           return true; 
         }
         break;      
@@ -59,11 +59,11 @@ class Model_Setup extends MY_Model
 
         $tables =  array ( 
           'tbl_auth_attempts',
-          'tbl_bookings',
+          'tbl_chapter',
           'tbl_logs',
-          'tbl_payments',
-          'tbl_rooms',
-          'tbl_settings',
+          'tbl_pbma_membership',
+          'tbl_nyo_membership',
+          'tbl_member_meta',
           'tbl_user_login',
           'tbl_user_meta',
         );

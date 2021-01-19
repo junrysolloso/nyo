@@ -1,6 +1,6 @@
 <div class="container-scroller">
   <div class="container-fluid page-body-wrapper full-page-wrapper">
-    <div class="content-wrapper d-flex align-items-center auth theme-one" style="background-image: linear-gradient(to bottom,#d41459,#911a6c);">
+    <div class="content-wrapper d-flex align-items-center auth theme-one" style="background-image: linear-gradient(to left,#19D895,#2FBA54) !important;">
       <div class="row w-100">
         <div class="col-lg-4 mx-auto">
           <?php if( $this->session->tempdata( 'alert' ) ): ?>
@@ -20,11 +20,11 @@
                     <select name="table_name" id="table_name" class="form-control">
                       <option value="All">All</option>
                       <option value="Authentication">Authentication</option>
-                      <option value="Bookings">Bookings</option>
+                      <option value="Chapter">Chapter</option>
                       <option value="Logs">Logs</option>
-                      <option value="Payments">Payments</option>
-                      <option value="Rooms">Rooms</option>
-                      <option value="Settings">Settings</option>
+                      <option value="PBMA Membership">PBMA Membership</option>
+                      <option value="NYO Membership">NYO Membership</option>
+                      <option value="Members">Members</option>
                       <option value="User">User</option>
                     </select>
                   </div>
