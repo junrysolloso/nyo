@@ -7,7 +7,7 @@ if( ! function_exists( 'credits' ) ) {
   function credits( $request ) {
     switch ( $request ) {
       case 'co':
-        echo 'Copyright © '.date('Y').' News Youth Organization';
+        echo '&copy; '.date('Y').' News Youth Organization';
         break;
       case 'cr':
         echo 'Created with ❤ by Junry Solloso';

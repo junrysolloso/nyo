@@ -12,9 +12,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$hook['display_override'][] = array(
-  'class' => '',
-  'function' => 'minifier',
-  'filename' => 'minifier.php',
-  'filepath' => 'hooks'
-);
+// $hook['display_override'][] = array(
+//   'class' => '',
+//   'function' => 'minifier',
+//   'filename' => 'minifier.php',
+//   'filepath' => 'hooks'
+// );

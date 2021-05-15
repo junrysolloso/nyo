@@ -1,6 +1,6 @@
 <div class="container-scroller">
   <div class="container-fluid page-body-wrapper full-page-wrapper">
-    <div class="content-wrapper d-flex align-items-center text-center error-page">
+    <div class="content-wrapper d-flex align-items-center text-center error-page" style="background: linear-gradient(120deg, #556cdc, #128bfc, #18bef1);">
       <div class="row flex-grow">
         <div class="col-lg-7 mx-auto text-white">
           <div class="row align-items-center d-flex flex-row">

@@ -4,22 +4,6 @@
   var p_paging = false, c_paging = false, i;
 
   $(document).ready(function(){
-
-    // Check if row count is greater that 14 
-    // then set paging to true
-    if ( $('.pending-count').length ) {
-      var p_count = $('.pending-count').val();
-      if ( p_count > 14 ) {
-        p_paging = true;
-      }
-    }
-
-    if ( $('.cancelled-count').length ) {
-      var c_count = $('.cancelled-count').val();
-      if ( c_count > 14 ) {
-        c_paging = true;
-      }
-    }
     
     // Table values
     var ar_tables = ['#pendings-table', '#cancelled-table', '#logs-table', '#room-table', '#user-table', '#list-table', '#booker-payments-table', '#recent-pays-table'];

@@ -1,7 +1,4 @@
-            </div>
-            <!-- end card-body -->
-          </div>
-          <!-- end card -->
+
         </div>
         <!-- end content-wrapper -->
 

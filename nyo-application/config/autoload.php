@@ -137,4 +137,4 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 
-$autoload['model'] = array( 'setting/Model_Log' );
+$autoload['model'] = array( 'logs/Model_Log' );

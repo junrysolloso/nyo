@@ -5,6 +5,18 @@
   background-image: linear-gradient(to left,#19D895,#2FBA54) !important;
 }
 
+.sidebar .sidebar-inner > .nav > .nav-item .submenu {
+  background: #fff;
+}
+
+.navbar,
+.shadow-sm,
+.dropdown-menu.show,
+.sidebar .sidebar-inner > .nav > .nav-item .submenu {
+  -webkit-box-shadow: 1px 0 6px -1px rgb(0 0 0 / 10%) !important;
+  box-shadow: 1px 0 6px -1px rgb(0 0 0 / 10%) !important;
+}
+
 .tab-solid-success .nav-link.active,
 .btn-success.submit-btn,
 .pagination .page-item.active .page-link,
@@ -19,10 +31,18 @@
 .btn-success.submit-btn,
 .btn-info.submit-btn,
 .btn-default.submit-btn,
-.btn-primary.submit-btn {
+.btn-primary.submit-btn,
+.btn-danger.submit-btn {
   padding: 14px 20px !important;
   border-radius: 6px;
 }
+
+.user-settings:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
   background: #2FBA54;
@@ -55,19 +75,6 @@
   background: #fff;
 }
 
-/* Body */
-
-/* .pending .card,
-.cancelled .card,
-.settings .card,
-.dashboard .card,
-.backup .card,
-.boarder .card {
-  border-radius: 10px;
-  -webkit-box-shadow: 0 10px 30px 0 rgba(0,0,0,.1);
-  box-shadow: 0 10px 30px 0 rgba(0,0,0,.1);
-} */
-
 /* Data Tables */
 
 div.dataTables_wrapper div.dataTables_length label {
@@ -82,14 +89,6 @@ div.dataTables_wrapper div.dataTables_filter {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-
-/* .table.table-striped tbody tr:nth-child(odd):hover {
-  background-color: #fff;
-}
-
-.table.table-striped tbody tr:nth-child(even):hover {
-  background-color: #f3f6fd;
-} */
 
 .select2-container--default.select2-container--disabled .select2-selection--single,
 .form-control:disabled {
@@ -142,16 +141,6 @@ div.dataTables_wrapper div.dataTables_filter {
     max-width: 60vw; 
   }
 }
-
-/* Form Group */
-
-/* .auth.theme-one .auto-form-wrapper .form-group .input-group .input-group-append .input-group-text {
-  border-radius: 0 0 0 0;
-}
-
-.auth.theme-one .auto-form-wrapper .form-group .input-group .form-control {
-  border-radius: 0 0 0 0;
-} */
 
 /* Tab */
 

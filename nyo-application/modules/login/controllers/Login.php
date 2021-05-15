@@ -12,7 +12,7 @@ class Login extends MY_Controller
 	}
 
 	/**
-	 * INDEX PAGE
+	 * Index
 	 */
 	public function index() {
 
@@ -100,7 +100,7 @@ class Login extends MY_Controller
 	}
 
 	/**
-	 * BLOCK USER IF TOO MANY ATTEMPTS
+	 * Block user if too many attempts
 	 */
 	public function blocked() {
 		if ( $this->session->userdata( 'user_id' ) ) {
@@ -114,7 +114,7 @@ class Login extends MY_Controller
 	}
 
 	/**
-	 * USER SIGNOUT
+	 * Signout
 	 */
 	public function signout() {
 
@@ -133,7 +133,7 @@ class Login extends MY_Controller
 	}
 
 	/**
-   * SERVER RESPONSE
+   * Server response
    * @param array $data
    */
   private function _response( $data ) {
@@ -144,6 +144,3 @@ class Login extends MY_Controller
   }
 
 }
-
-/* End of file Login.php */
-/* Location: ./application/modules/login/controllers/Login.php */

@@ -7,63 +7,21 @@
       <div class="navbar-menu-wrapper d-flex align-items-center w-100">
         <ul class="nav">
           <div class="nav-item ml-1">
-            <div class="form-group" style="width: 70vw; margin-bottom: 0px;">
-              <div class="input-group">
-                <input type="text" name="data_search" onmouseover="this.focus();" id="top-search" class="form-control" placeholder="Search Member">
-                <div class="input-group-append">
-                  <span class="input-group-text">
-                    <i class="mdi mdi-magnify-plus mdi-18px"></i>
-                  </span>
+            <form action="" method="post">
+              <div class="form-group" style="width: calc(100vw - 500px); margin-bottom: 0px;">
+                <div class="input-group">
+                  <input type="text" name="data_search" onmouseover="this.focus();" id="top-search" class="form-control" placeholder="Search Member">
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <i class="mdi mdi-magnify-plus mdi-18px"></i>
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
         </ul>
         <ul class="nav navbar-nav-right ml-auto">
-          <li class="nav-item dropdown circle-grid">
-            <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-              <i class="mdi mdi-bell-outline"></i>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
-              <a class="dropdown-item dropdown-header">
-                <div class="wrapper">
-                  <h4 class="mb-1 font-weight-medium">Notification</h4>
-                  <p class="mb-0 font-weight-medium float-left font-weight-light">You have 7 unread mails </p>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src="<?php echo base_url(); ?>nyo-uploads/avatar.jpg" alt="image" class="img-sm profile-pic"> </div>
-                <div class="preview-item-content flex-grow py-2">
-                  <p class="preview-subject ellipsis font-weight-medium text-dark">Marian Garner </p>
-                  <p class="font-weight-light small-text"> The meeting is cancelled </p>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="nav-item dropdown circle-grid">
-            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-              <i class="mdi mdi-tune"></i>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="notificationDropdown">
-              <a class="dropdown-item dropdown-header">
-                <div class="wrapper">
-                  <h4 class="mb-1 font-weight-medium">Activity Controller</h4>
-                  <p class="mb-0 font-weight-medium float-left font-weight-light">You have 4 new notifications</p>
-                </div>
-              </a>
-              <a class="dropdown-item preview-item py-3">
-                <div class="preview-thumbnail">
-                  <i class="mdi mdi-alert m-auto text-primary"></i>
-                </div>
-                <div class="preview-item-content">
-                  <h6 class="preview-subject font-weight-normal text-dark mb-1">Application Error</h6>
-                  <p class="font-weight-light small-text mb-0"> Just now </p>
-                </div>
-              </a>
-            </div>
-          </li>
           <li class="nav-item dropdown circle-grid">
             <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
               <i class="mdi mdi-help"></i>

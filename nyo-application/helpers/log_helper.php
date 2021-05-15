@@ -79,8 +79,8 @@ if( ! function_exists( 'clean_array' ) ) {
    */
   function clean_array( $array ) {
     if( is_array( $array ) ) {
-      foreach ( $array as $key => $val ) {
-        if ( empty(  $val ) ||  $val == NULL ) {
+      foreach ( $array as $key ) {
+        if ( empty(  $key ) ||  $key == NULL ) {
           unset( $array[ $key ] );
         }
       }

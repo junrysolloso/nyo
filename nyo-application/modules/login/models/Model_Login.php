@@ -4,7 +4,7 @@ class Model_Login extends MY_Model
 {
 
   /**
-   * CLASS PROPERTIES
+   * Class properties
    */
   protected $table      = 'tbl_user_login';
   protected $table_join = 'tbl_user_meta';
@@ -13,15 +13,11 @@ class Model_Login extends MY_Model
 
   function __construct() {
     parent:: __construct();
-
     $this->load->model( 'Model_Authattempts' );
   }
 
   /**
-   * CHECK USER IF EXIST
-   * 
-   * @param array $data
-   * @return bool
+   * Check user if exist
    */
   public function user_check( $data = [] ) {
     if ( ! empty( $data ) && is_array( $data ) ) {
@@ -64,6 +60,3 @@ class Model_Login extends MY_Model
   }
 
 }
-
-/* End of file Model_Login.php */
-/* Location: ./application/modules/login/models/Model_Login.php */

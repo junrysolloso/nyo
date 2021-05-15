@@ -4,7 +4,7 @@ class Model_Log extends MY_Model
 {
 
   /**
-   * CLASS PROPERTIES
+   * Class properties
    */
   protected $table    = 'tbl_logs';
   protected $user_id  = 'user_id';
@@ -18,10 +18,7 @@ class Model_Log extends MY_Model
   }
 
   /**
-   * ADD TO LOG
-   * 
-   * @param string $task
-   * @param int $user_id
+   * Add
    */
   public function add_log( $activity = NULL ) {
     if ( ! empty( $activity ) ) {
@@ -37,14 +34,14 @@ class Model_Log extends MY_Model
   } 
 
   /**
-   * GET LOGS
+   * Get logs
    */
   public function get_logs() {
 
     // Data to view
     $this->db->select( '`log_id`, `login_name`, `log_date`, `log_task`' );
     $this->join( $this->relate_table, '`tbl_user_login`.`user_id`=`tbl_logs`.`user_id`' );
-    $this->order_by( '`log_id`', 'DESC' )->limit( 504 );
+    $this->order_by( '`log_id`', 'DESC' )->limit( 108 );
     $query = $this->db->get( $this->table );
 
     if ( $query ) {
@@ -53,6 +50,3 @@ class Model_Log extends MY_Model
   }
 
 }
-
-/* End of file Model_Log.php */
-/* Location: ./application/modules/settings/models/Model_Log.php */

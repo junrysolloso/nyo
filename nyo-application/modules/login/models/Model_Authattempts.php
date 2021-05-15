@@ -4,7 +4,7 @@ class Model_Authattempts extends MY_Model
 {
   
   /**
-   * CLASS PROPERTIES
+   * Class properties
    */
   protected $table      = 'tbl_auth_attempts';
   protected $id         = 'auth_id';
@@ -13,10 +13,7 @@ class Model_Authattempts extends MY_Model
   protected $auth_user  = 'auth_user';
 
   /**
-   * INSERT LOGIN ATTEMPTS
-   * 
-   * @param string $user
-   * @return bool
+   * Insert login attempts
    */
   public function _attempt_insert( $user = '' ) {
     if( $user && ! empty( $user ) ) {
@@ -32,10 +29,7 @@ class Model_Authattempts extends MY_Model
   }
 
   /**
-   * COUNT LOGIN ATTEMPTS
-   * 
-   * @param int $user_id
-   * @return int $count
+   * Count login attempts
    */
   public function _attempt_check() {
     $this->db->select( 'COUNT(`auth_id`) as `id`' );
@@ -46,9 +40,7 @@ class Model_Authattempts extends MY_Model
   }
 
   /**
-   * CLEAR LOGIN ATTEMPTS
-   * 
-   * @return bool
+   * Clear login attempts
    */
   public function _attempt_clear() {
     if( $this->db->truncate( $this->table ) ) {
@@ -57,6 +49,3 @@ class Model_Authattempts extends MY_Model
   }
 
 }
-
-/* End of file Model_Authattempts.php */
-/* Location: ./application/modules/login/models/Model_Authattempts.php */

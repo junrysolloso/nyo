@@ -1,70 +1,5 @@
 /**
- * TOAST NOTIFICATIONS
- */
-
-// Success
-showSuccessToast = function(msg) {
-  'use strict';
-  $.toast({
-    heading: 'Success',
-    text: msg,
-    showHideTransition: 'fade',
-    icon: 'success',
-    loaderBg: '#f96868',
-    position: 'bottom-right',
-    hideAfter: 5000,
-    allowToastClose: false,
-  })
-};
-
-// Warning
-showWarningToast = function(msg) {
-  'use strict';
-  $.toast({
-    heading: 'Warning',
-    text: msg,
-    showHideTransition: 'fade',
-    icon: 'warning',
-    loaderBg: '#57c7d4',
-    position: 'bottom-right',
-    hideAfter: 5000,
-    allowToastClose: false,
-  })
-};
-
-// Error
-showErrorToast = function(msg) {
-  'use strict';
-  $.toast({
-    heading: 'Error',
-    text: msg,
-    showHideTransition: 'fade',
-    icon: 'error',
-    loaderBg: '#f2a654',
-    position: 'bottom-right',
-    hideAfter: 5000,
-    allowToastClose: false,
-  })
-};
-
-// Info
-showInfoToast = function(msg) {
-  'use strict';
-  $.toast({
-    heading: 'Message',
-    text: msg,
-    showHideTransition: 'fade',
-    icon: 'info',
-    loaderBg: '#46c35f',
-    position: 'bottom-right',
-    hideAfter: 5000,
-    allowToastClose: false,
-  })
-};
-
-/**
- * EMPTY VALUE CHECKER
- * @param {array} data 
+ * Empty values checker
  */
 data_checker = function (data) {
   
@@ -104,7 +39,7 @@ data_checker = function (data) {
 }
 
 /**
- * RESET INPUT ICON
+ * Reset input icon
  */
 input_icon_reset = function () {
 
@@ -120,8 +55,7 @@ input_icon_reset = function () {
 }
 
 /**
- * SET ICON COLOR ON INPUT EVENT
- * @param {object} obj 
+ * Set icon color
  */
 input_icon = function (obj) {
 
@@ -144,19 +78,16 @@ input_icon = function (obj) {
 }
 
 /**
- * CAPITALIZE FIRST LETTER
- * @param {string} str 
- * @param {bool} lower 
+ * Capitalize first letter
  */
 const capitalize = (str, lower = false) => (lower ? str.toLowerCase() : str).replace(/(?:^|\s|["'([{])+\S/g, match => match.toUpperCase()); 
 
 /**
- * REMOVE WHITE SPACE INIDE WORDS
- * @param {string} str 
+ * Remove space on words
  */
 const trim_whitespace = (str) => str.replace(/\s/g,'');
 
 /**
- * BASE URL
+ * Base url
  */
 const base_url = $('input#base_url').val();

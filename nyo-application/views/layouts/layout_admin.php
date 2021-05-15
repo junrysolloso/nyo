@@ -40,22 +40,16 @@
     <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/vendors/select2/js/select2.full.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/vendors/sweetalert/sweetalert.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/vendors/jquery-toast-plugin/jquery.toast.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helper_dateformat.js"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helper_nav.js"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helper_toast.js"></script>
-
-    <!-- 
-    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helper_notify.js"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helper_form_validation.js"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/vendors/daterangepicker/moment.min.js"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/vendors/daterangepicker/daterangepicker.min.js"></script> 
-    -->
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/plugins/form.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/plugins/dateformat.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helpers/helper_nav.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helpers/helper_toast.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helpers/helper_input.js"></script>
 
     <!-- Custom JS -->
-    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helper_datepicker.js"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helper_table.js"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helper_action.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helpers/helper_datepicker.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helpers/helper_table.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>nyo-assets/js/helpers/helper_action.js"></script>
 
     <!-- Additional JS -->
     <?php echo $_scripts; ?>
