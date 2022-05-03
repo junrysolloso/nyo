@@ -1,7 +1,7 @@
 {
     "require": {
         "phpoffice/phpspreadsheet": "^1.15",
-        "dompdf/dompdf": "^0.8.6",
+        "dompdf/dompdf": "^1.2.1",
         "zendframework/zend-barcode": "^2.8"
     }
 }
